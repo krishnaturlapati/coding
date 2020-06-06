@@ -105,3 +105,18 @@ How does the web application container that our servlet is running in know when 
 </webapp>
 ```
 
+### Injection Attacks
+
+* Manipulate our execution paths and our logic on the server, or on other clients that are accessing our website
+* Client can send us some data that causes to take some command or action
+* Sql injection attacks - manipulate data by passing bad sql 
+
+### Building Cloud Services on HTTP
+
+HTTP is by far and away, the most common method of communicating between mobile, mobile devices and cloud services. HTTP give us a really good structure for building web apps
+ 
+ * We can express the query parameters for requests that we're sending for information about the
+ * Or send information as a multi-part set of parameters or URL encoded form parameters.
+ * store data with PUT request 
+ * store data with POST request
+ 
