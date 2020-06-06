@@ -120,3 +120,42 @@ HTTP is by far and away, the most common method of communicating between mobile,
  * store data with PUT request 
  * store data with POST request
  
+
+### The Spring Dispatcher Servlet and Controller Abstraction
+
+* Spring framework gives you is it gives us a specialized servlet called the dispatcher servlet
+* Dispatcher servlet allows us to register one or more controllers 
+* Controllers are plain java objects that can handle HTTP requests 
+* Controller contains business methods and dispatcher servlet can invoke these methods via XML or Java Annotations 
+* Dispatcher provides extra routing power, as well as data extraction, marshalling and validation, before we actually do work.
+
+
+### Spring Controllers 
+
+* Simple Java classes 
+* Annoation to connect Dispatcher to Controller
+
+```java 
+
+@Controller
+public class ContactsControl {
+
+	@RequestMapping("/contacts") 
+	public Contacts getContacts(){
+		// get contacts
+		// return contacts
+	}
+	
+	@RequestMapping("/friends")
+	public Friends getFriends(){
+		// get contacts
+		// return contacts
+	}
+	
+	
+}
+```
+
+
+### Accepting Client Data with RequestParam Annotations
+
