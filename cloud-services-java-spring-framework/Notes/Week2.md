@@ -159,3 +159,30 @@ public class ContactsControl {
 
 ### Accepting Client Data with RequestParam Annotations
 
+@RequestParam are special annotations that can be attached to method parameters 
+
+```java 
+
+@Controller
+public class ContactsControl {
+
+	@RequestMapping("/contacts") 
+	public Contacts getContacts(){
+		// get contacts
+		// return contacts
+	}
+	
+	@RequestMapping("/friends")
+	public Friends getFriends(){
+		// get contacts
+		// return contacts
+	}
+	
+	@RequestMapping("/search")
+	public Search(
+		@RequestParam("search") String searchStr;
+		@RequestParam("flag") int searchFlag;
+	}
+	
+}
+```
