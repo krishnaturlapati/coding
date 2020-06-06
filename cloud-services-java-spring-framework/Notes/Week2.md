@@ -43,6 +43,15 @@ public class VideoServlet extends HttpServlet{
 	String url = req.getParameter("url");
 	String durationStr = req.getParameter("duration");
 	
+	
+	long duration = -1;
+	try{
+	  duration = Long.parseLong(durationStr);
+	}
+	catch(NumberFormatException e){
+	}
+	
+	
 	// set the response content type 
 	resp.setContentType("text/plain");
 	
