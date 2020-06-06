@@ -186,3 +186,7 @@ public class ContactsControl {
 	
 }
 ```
+
+### Accepting Client Data with PathVariable Annotations
+
+### Accepting Client Data with RequestBody Annotations & JSON
