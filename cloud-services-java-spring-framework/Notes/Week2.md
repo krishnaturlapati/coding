@@ -1,4 +1,4 @@
-## Cloud Rest service with Servlet
+### Cloud Rest service with Servlet
 
 ```java
 public class VideoServlet extends HttpServlet{
@@ -75,8 +75,10 @@ public class VideoServlet extends HttpServlet{
 ```
 
 
-## Request Routing and Web.xml
+### Request Routing and Web.xml
 
+
+How does the web application container that our servlet is running in know when should it invoke our servlet and which operations it should handle? we need a routing relationship this is stored in web.xml 
 
 ```xml
 <web-app xmlns="https://java.sun.com/xmls/ns/j2ee" version="2.4" xmlns:xsi="http://" xmlns:schemaLocation="http://"
