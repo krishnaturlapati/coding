@@ -76,3 +76,18 @@ public class VideoServlet extends HttpServlet{
 
 
 ## Request Routing and Web.xml
+
+
+```xml
+<web-app xmlns="https://java.sun.com/xmls/ns/j2ee" version="2.4" xmlns:xsi="http://" xmlns:schemaLocation="http://"
+	<servlet>
+		<servlet-name>video</servlet-name>
+		<servlet-class>org.mobilecloud.VideoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>video</servlet-name>
+		<url-pattern>/video</url-pattern>
+	</servlet-mapping>
+</webapp>
+```
+
