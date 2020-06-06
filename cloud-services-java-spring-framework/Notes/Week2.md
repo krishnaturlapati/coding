@@ -78,14 +78,17 @@ public class VideoServlet extends HttpServlet{
 ### Request Routing and Web.xml
 
 
-How does the web application container that our servlet is running in know when should it invoke our servlet and which operations it should handle? we need a routing relationship this is stored in web.xml 
+How does the web application container that our servlet is running in know when should it invoke our servlet and which operations it should handle? we need a routing relationship this is stored in web.xml. Newer apps use Java-based configurations.
 
 ```xml
-<web-app xmlns="https://java.sun.com/xmls/ns/j2ee" version="2.4" xmlns:xsi="http://" xmlns:schemaLocation="http://"
+<web-app xmlns="https://java.sun.com/xmls/ns/j2ee" version="2.4" xmlns:xsi="http://" xmlns:schemaLocation="http://">
+	
+	<!-- defining/declaring -->
 	<servlet>
 		<servlet-name>video</servlet-name>
 		<servlet-class>org.mobilecloud.VideoServlet</servlet-class>
 	</servlet>
+	<!-- routing -->
 	<servlet-mapping>
 		<servlet-name>video</servlet-name>
 		<url-pattern>/video</url-pattern>
