@@ -15,8 +15,6 @@ Reference https://courses.ece.msstate.edu/ece4723/fall17/lab/t1/t1.pdf
 """
 
 
-
-
 class Temperature:
     class OutOfRangeError(ValueError):
         pass
@@ -29,7 +27,6 @@ class Temperature:
 
         if self._fahrenheit < -459.67:
             raise self.OutOfRangeError('fahrenheit cannot got below absolute zero ')
-
 
     def fahrenheit(self):
         return 9.0/5.0 * self._celsius + 32

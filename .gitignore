@@ -5,6 +5,9 @@ __pycache__/
 
 # C extensions
 *.so
+.gitignore
+
+coding.iml
 
 # Distribution / packaging
 .Python
