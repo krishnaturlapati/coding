@@ -20,7 +20,7 @@ def test_to_fahrenheit_known_values():
     """converting to Fahrenheit should give known result with known input"""
     for tempC, tempF in knownValues:
         result = Temperature(celsius=tempC).fahrenheit()
-        assertions.assertAlmostEquals(tempF, result, SIGNIFICANT_PLACES)
+        assertions.assertAlmostEqual(tempF, result, SIGNIFICANT_PLACES)
 
 
 def test_to_celsius_known_values():

@@ -36,4 +36,28 @@ class Solution(object):
         :type nums: List[int]
         :rtype: return List[int].
         """
-        pass
+        # begin prd
+        bp = 1
+        # end prd
+        ep = 1
+        # final ans list
+        ans = []
+
+        for i in range(len(nums)):
+
+            # begin loop, j is begin ptr
+            for j in range(i):
+                bp *= nums[j]
+
+            # end loop, k is end ptr
+            for k in range(i+1, len(nums)):
+                ep *= nums[k]
+
+            ans.append(bp * ep)
+            ep = 1
+            bp = 1
+        return ans
+
+
+t = Solution()
+t.with_out_division(nums=[1,2,3,4,5])

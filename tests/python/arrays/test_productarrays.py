@@ -11,12 +11,19 @@ def product_array_object():
 def test_product_array_case1(product_array_object):
     input_list = [1, 2, 3, 4, 5]
     expected = [120, 60, 40, 30, 24]
-    actual = product_array_object.with_division(nums=input_list)
+    actual = product_array_object.with_out_division(nums=input_list)
     assert actual == expected
 
 
 def test_product_array_case2(product_array_object):
     input_list = [3, 2, 1]
     expected = [2, 3, 6]
-    actual = product_array_object.with_division(nums=input_list)
+    actual = product_array_object.with_out_division(nums=input_list)
+    assert actual == expected
+
+
+def test_product_array_case3(product_array_object):
+    input_list = [10, 3, 5, 6, 2]
+    expected = [180, 600, 360, 300, 900]
+    actual = product_array_object.with_out_division(nums=input_list)
     assert actual == expected
